@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wolfstonie's Club</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="body">
+    <header class="huvud"> 
+    
+        </header>
+	
+	<header class="mainHeader">
+		<img src="img/Loga.jpg" id="logo">
+		<nav><ul>
+			<li><a href="index.html">Hem</a></li>
+			<li class="active"><a href="Boka.html">Boka</a></li>
+			<li><a href="Galleri.html">Galleri</a></li>
+			
+            
+		</ul></nav>
+	</header>
+		
+	<div class="mainContent">
+		<div class="content">	
+				<article class="topcontent">	
+					<header>
+						<h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Välkommen</a></h2>
+					</header>
+					
+					<footer>
+						<p class="post-info"></p>
+					</footer>
+					
+					<content>
+						<p>För att boka var vänlig fyll i information nedan och välj de alternativ som du behagar.</p>
+                        <form action="Bokingar.php">
+						 <input alt="Förnamn" placeholder="Förnamn">
+                        <input placeholder="Efternamn" alt="Efternamn"><br>
+                        <input placeholder="Adress"> 
+                        <input placeholder="Post Nummer"> <br>
+                        <input placeholder="Telefon Nummer" alt="Telefon Nummer">
+                            <input placeholder="Antal Rum" alt="Antal Rum">
+                            <br>
+                            <input list="Vuxna" min="0" max="4" placeholder="Vuxna">
+                            <datalist id="Vuxna">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                            
+                            </datalist>
+                            <input list="Barn" min="0" max="4" placeholder="Barn">
+                            <datalist id="Barn">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                            
+                            </datalist>
+                            <input type="submit" value="Submit">
+                            </form>
+					</content>
+					
+				</article>
+
+				<article class="bottomcontent">	
+				
+				</article>
+		</div>
+			
+				<aside class="top-sidebar">
+					<article>
+					<h2>Kontakt</h2>
+					<p>Telefon Nr: 0703-16 14 02 <br> 
+                        Email: Wolfstonie@gmail.com</p>
+				    </article>
+				</aside>
+				
+				<aside class="middle-sidebar">
+					<article>
+					<h2></h2>
+					<p></p>
+				    </article>
+				</aside>				
+
+				<aside class="bottom-sidebar">
+					<article>
+					<h2></h2>
+					<p></p>
+				    </article>
+				</aside>	
+	</div>
+	
+	<footer class="mainFooter">
+		<p>Gjord Av Carl Ulvesten </p>
+	</footer>
+
+</body>
+</html>
