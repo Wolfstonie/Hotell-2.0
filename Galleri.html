@@ -11,7 +11,7 @@
 </head>
 
 <body class="body">
-	
+	<div class="huvud">
 	<header class="mainHeader">
 		<img src="img/Loga.jpg" id="logo">
 		<nav><ul>
@@ -35,9 +35,13 @@
 					</footer>
 					
 					<content>
-						<img src="img/197-KlausK-conde-nast-traveller-15sept14-pr_1080x1080.jpg"> <img src="img/24020a8b86c2d31efea2d37c526c2564.jpg">
-                        <img src="img/how-to-score-the-best-value-on-hotel-rooms-this-summer-4">
-                        <img src="img/198-KlausK-conde-nast-traveller-15sept14-pr_1080x1080.jpg">
+                        <div class="w3-content w3-section" style="#">
+						<img class="mySlides w3-animate-top" src="img/197-KlausK-conde-nast-traveller-15sept14-pr_1080x1080.jpg" style="width:100%"> 
+                        <img class="mySlides w3-animate-top" src="img/24020a8b86c2d31efea2d37c526c2564.jpg">
+                        <img class="mySlides w3-animate-top" src="img/the-robey-hotel-chicago-conde-nast-traveller-21april17-adrian-gaut_1080x1080.jpg">
+                        <img class="mySlides w3-animate-top" src="img/198-KlausK-conde-nast-traveller-15sept14-pr_1080x1080.jpg">
+                            <div/>
+                        
 					</content>
 					
 				</article>
@@ -50,8 +54,9 @@
 				<aside class="top-sidebar">
 					<article>
 					<h2>Kontakt</h2>
-					<p>Telefon Nr: 0703-16 14 02 <br> 
-                        Email: Wolfstonie@gmail.com</p>
+					<p>Telefon Nr: 0703-16 14 02 <br>
+                        </p>
+                        <a href="Wolfstonie@gmail.com">Email: Wolfstonie@gmail.com</a>
 				    </article>
 				</aside>
 				
@@ -72,7 +77,25 @@
 	
 	<footer class="mainFooter">
 		<p>Gjord Av Carl Ulvesten </p>
+        <p> Kontakt <br> Telefon: 070-3 16 14 02 <br> Email: Wolfstonie@gmail.com </p>
 	</footer>
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
 
 </body>
 </html>
